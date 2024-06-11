@@ -40,6 +40,15 @@ public Map testJson() {
   map.put("key3", "awerw");
   return  map;
 }
+@GetMapping("/test/emp")
+@ResponseBody
+public List testemp() {
+  List<Map<String, Object>> list2 = jt.queryForList("select * from emp");
+  
+  return list2;
+}
+
+
 @GetMapping("/test/json2")
 @ResponseBody
 public List testJson2() {
