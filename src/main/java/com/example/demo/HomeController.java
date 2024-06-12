@@ -42,9 +42,8 @@ public Map testJson() {
 }
 @GetMapping("/test/emp")
 @ResponseBody
-public List testemp() {
+public List testEmp() {
   List<Map<String, Object>> list2 = jt.queryForList("select * from emp");
-  
   return list2;
 }
 
